@@ -14,25 +14,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = "◉—————————"
+        bar = "♡—————————"
     elif 10 < anon < 20:
-        bar = "—◉————————"
+        bar = "—♡————————"
     elif 20 <= anon < 30:
-        bar = "——◉———————"
+        bar = "——♡———————"
     elif 30 <= anon < 40:
-        bar = "———◉——————"
+        bar = "———♡——————"
     elif 40 <= anon < 50:
-        bar = "————◉—————"
+        bar = "————♡—————"
     elif 50 <= anon < 60:
-        bar = "—————◉————"
+        bar = "—————♡————"
     elif 60 <= anon < 70:
-        bar = "——————◉———"
+        bar = "——————♡———"
     elif 70 <= anon < 80:
-        bar = "———————◉——"
+        bar = "———————♡——"
     elif 80 <= anon < 95:
-        bar = "————————◉—"
+        bar = "————————♡—"
     else:
-        bar = "—————————◉"
+        bar = "—————————♡"
 
     buttons = [
         [
@@ -62,7 +62,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/filmymenchat'),
+                       url='https://t.me/MensBotZ'),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
@@ -122,7 +122,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/filmymenchat'),
+                       url='https://t.me/MensBotZ'),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
@@ -154,7 +154,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/filmymenchat'),
+                       url='https://t.me/MensBotZ'),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
@@ -183,7 +183,7 @@ def telegram_markup(_, chat_id):
         [
             InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/filmymenchat'),
+                       url='https://t.me/MensBotZ'),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
@@ -210,7 +210,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/filmymenchat'),
+                       url='https://t.me/MensBotZ'),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
@@ -313,7 +313,7 @@ close_keyboard = InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/the_Chatting_Hub'),
+                       url='https://t.me/MensBotZ'),
                     InlineKeyboardButton(
                         text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
                     )
@@ -347,7 +347,7 @@ def queue_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                        text="📡Join",
-                       url='https://t.me/the_chatting_hub'),
+                       url='https://t.me/MensBotZ'),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
